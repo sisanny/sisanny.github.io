@@ -5,6 +5,7 @@ main{
     display: flex;
     align-content: center;
     margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
   }
 
 a:hover {
@@ -22,20 +23,24 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 5px;
-  margin-left: 35px;
+  margin-left: 30px;
   }
+
+.intro {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+p {
+  font-size: 13px;
+}
 
 h1,
 .headline1,
 .headline,
-.intro,
 .About {
   font-family: 'Indie Flower', cursive;
   }
-
-p {
-  font-family: 'Open Sans', sans-serif;
-}
 
 .right {
     width:67%;
@@ -48,13 +53,17 @@ p {
 .left {
     width:35%;
     color: #3cb878;
-    
+    border: 1px solid #3cb878;
   }
+
+.headline1 {
+  text-align: center;
+}
 
 .headline1,
 .headline {
     font-size: 26px;
-    margin: 0;
+    line-height: 60px;
   }
   
 .headline::before {
@@ -65,8 +74,8 @@ p {
   } 
 
 .subheadline {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 16px;
   }
   
 .subheadline::before {
@@ -113,6 +122,22 @@ h1 {
     bottom: 30px;
   }
 
+.intro {
+  text-align: center;
+}
+
+.aintro {
+  color:  #3cb878;
+}
+
+.aintro::hover {
+  cursor: pointer;
+}
+
+.interest {
+  border-top: 1px solid #3cb878;
+}
+
 .Contacts {
     border-top: 3px solid #3cb878;
     margin-top: 5px;
@@ -124,7 +149,7 @@ h1 {
 
 .pcontacts1 {
   width: 80px;
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 .pcontacts2 {
@@ -134,7 +159,7 @@ h1 {
 }
 
 .pcontacts3 {
-  width: 180px;
+  width: 190px;
 }
 
 img {
@@ -148,13 +173,11 @@ img {
     
   }
 
-.Work{
-  display: flex;
+.elective {
+  font-size: 13px;
+  position: relative;
+  bottom: 10px;
 }
-
-.Education {
-    display: flex;
-  }
 
 .Skills {
     display: flex;
@@ -196,7 +219,7 @@ img {
 }
 
 @keyframes example {
-  0%   {color: #F0FFFF;; top:0px;}
+  0%   {color: #F0FFFF; top:0px;}
   100% {color: #3cb878; top:270px;}
 }
 
