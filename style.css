@@ -38,6 +38,7 @@ p {
     background-color: #3cb878;
     color: #F0FFFF;
     padding: 30px;
+    position: relative;
   }
 
 .left {
@@ -54,8 +55,9 @@ p {
   
 .headline::before {
     content: '.';
-    position: relative;
-    right: 26px;
+    position: absolute;
+    left: 24px;
+    top: 35px;
     font-size: 55px;
   } 
 
