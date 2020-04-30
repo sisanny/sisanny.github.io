@@ -56,8 +56,8 @@ p {
 .headline::before {
     content: '.';
     position: relative;
-    right: 26px;
-    font-size: 55px;
+    right: 28px;
+    font-size: 65px;
   } 
 
 .subheadline {
@@ -141,6 +141,7 @@ img {
 .line {
     border-left: 1px solid #F0FFFF;
     padding-left: 20px;
+    
   }
 
 .Work{
