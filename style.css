@@ -191,3 +191,19 @@ img {
   font-size:  13px;
 }
 
+@keyframes example {
+  0%   {color: #80ff00; top:0px;}
+  100% {color: #80ff00; top:270px;}
+}
+
+.anintro{
+position: relative;
+margin-top: 0;
+animation-name: example;
+animation-duration: 8s;
+animation-delay: 1s;
+text-align: center;
+color: transparent;
+width: 100%;
+}
+
