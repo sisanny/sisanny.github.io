@@ -172,10 +172,24 @@ img {
     
   }
 
+.pcelective {
+  position: relative;
+  left:40px;
+  text-decoration: underline;
+}
+
+.pelective {
+  width:130px;
+}
+
 .elective {
-  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   bottom: 10px;
+  left: 110px;
+  font-size: 13px;
+  
 }
 
 .Skills {
