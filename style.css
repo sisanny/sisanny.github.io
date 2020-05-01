@@ -90,7 +90,7 @@ h1,
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 280px;
+    height: 260px;
   }
 
 h1 {
@@ -98,7 +98,7 @@ h1 {
     background-color:  #3cb878;
     padding: 5px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     font-size: 35px;
     }
 
@@ -228,7 +228,7 @@ img {
 
 @keyframes example {
   0%   {color: #F0FFFF; top:0px;}
-  100% {color: #3cb878; top:270px;}
+  100% {color: #3cb878; top:280px;}
 }
 
 .anintro{
