@@ -174,13 +174,13 @@ img {
 }
 
 .pelective {
-  width:130px;
+  width:100px;
+  font-size: 12px;
   margin-bottom: 0;
 }
 
 .elective {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
   left: 110px;
   font-size: 13px;
