@@ -1,0 +1,56 @@
+body {
+    background: url("pexels-fwstudio-139309.jpg");
+}
+
+main {
+    margin: 0 350px;
+    display: flex;
+    height: 1000px;
+}
+
+img {
+    width: 160px;
+    height: 160px;
+    margin-top: 5px;
+    border-radius: 100px;
+}
+
+#top {
+    display: flex;
+}
+
+.decor {
+    width: 350px;
+    margin: 80px 30px 30px 30px;
+    height: 2px;
+    border-bottom: black dotted 2px;
+}
+
+#contacts {
+    text-align: center;
+}
+
+#cv {
+    width: 80%;
+    background-color: whitesmoke;
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+a {
+    color: #8b939a;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left: 800px;
+}
+
+a:hover {
+    pointer-events: painted;
+    color: black;
+}
