@@ -49,8 +49,12 @@ h1 {
  #orange {
      width: 230px;
      height: 100px;
-     margin: 10px 0;
+     margin: 50px 0;
      text-align: center;
+ }
+
+ #postit {
+     margin-top: 120px;
  }
 
  #orange {
