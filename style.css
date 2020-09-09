@@ -51,6 +51,7 @@ h1 {
      height: 100px;
      margin: 50px 0;
      text-align: center;
+     box-shadow: 7px 5px 5px black;
  }
 
  #postit {
