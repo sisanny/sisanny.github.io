@@ -1,0 +1,65 @@
+body {
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+}
+
+main {
+    margin: 0 350px;
+    display: flex;
+    height: 1000px;
+}
+
+#cv {
+    background-color: whitesmoke;
+    width: 800px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#pink,
+#blue,
+#green,
+#yellow {
+    width: 230px;
+    height: 100px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+#blue {
+    background-color: aqua;
+}
+
+#green {
+    background-color: lime;
+}
+
+#pink {
+    background-color: deeppink;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+a {
+    color: darkgrey;
+    text-decoration: none;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+}
+
+a:hover {
+    pointer-events: painted;
+    color: black;
+}
+
+#extra {
+    margin: 10px 0 10px -30px;
+    background-color: yellow;
+    width: 30px;
+    height: 100px;
+}

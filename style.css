@@ -1,135 +1,88 @@
-header {
-    margin-left: 230px;
-    margin-right: 230px;
-    background-color: #283747 ;
-    box-shadow: 0 8px 6px -6px black;
-}
-
-h1 {
-    margin-bottom: 0;
-    color: whitesmoke;
-    position: relative;
-    bottom: 70px;
+body {
+ background: url("pexels-fwstudio-139309.jpg");
 }
 
 main {
-    margin-left: 230px;
-    margin-right: 230px;
+    margin: 0 350px;
+    display: flex;
+    height: 1000px;
+}
+
+img {
+    width: 160px;
+    height: 160px;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    border-radius: 100px;
+}
+
+#top {
     display: flex;
 }
 
-.left {
-    width: 35%;
+.decor {
+    width: 350px;
+    margin:100px 30px 30px 30px;
+    height: 2px;
+    border-bottom: black dotted 2px;
 }
 
-.right {
-    width: 65%;
-    margin-left: 15px;
+#contacts {
+    text-align: center;
+}
+
+#cv {
+    width: 80%;
+    background-color: whitesmoke;
+    font-family: 'Architects Daughter', cursive;
 }
 
 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
 }
 
-.pic {
-    background-image: url('CVPic.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    position: relative;
-    left: 70px;
-    top: 50px;
-}
+ #blue,
+ #green,
+ #pink,
+ #yellow,
+ #orange {
+     width: 230px;
+     height: 100px;
+     margin: 10px 0;
+     text-align: center;
+ }
 
-.bp {
-    margin: 2px;
-}
+ #orange {
+     background-color:  #FFA500;
+ }
 
-.box {
-    width: 100%;
-    height: 30%;
-    color: white;
-    position: relative;
-}
+ #blue {
+     background-color: aqua;
+ }
 
-.box::before {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 12px;
-    left: 5px;
-    width: 50%;
-    top: 80%;
-    max-width:300px;
-    background:transparent;
-    box-shadow: 0 15px 10px #777;
-    transform: rotate(-3deg);
-}
+ #green {
+     background-color: lime;
+ }
 
+ #pink {
+     background-color: deeppink;
+ }
 
-.contact {
-    background-color: #ff7f50;
-    height: 35%;
-    color: white;
-}
+ #yellow {
+     background-color: yellow;
+ }
 
-.languages {
-    background-color: #93e011;
-}
+ a {
+     color: darkgrey;
+     text-decoration: none;
+     font-size: 40px;
+     position: relative;
+     top: 20px;
+ }
 
-.skills {
-    background-color:lightblue;
-}
-
-.hobbies {
-    background-color:orange;
-}
-
-h3 {
-    padding: 5px;
-}
-
-.ccontent {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.pcon {
-width: 170px;
-}
-
-.pemail {
-    font-size: 20px;
-    margin-top: 5px;
-}
-img {
-    width: 25px;
-    height: 25px;
-}
-
-.plang {
-    padding-bottom: 15px;
-    border-bottom: 1px solid white;
-    margin-left: 9px;
-}
-
-.hun {
-    margin-right: 10px;
-}
-
-.eng {
-    margin-right: 50px;
-}
-
-.eng::after {
-    content: "_____";
-    color: rgba(121, 138, 115, 0.849);
-    position: relative;
-    left: 190px;
-    top: 17px;
-}
+ a:hover {
+     pointer-events: painted;
+     color: black;
+ }
 
