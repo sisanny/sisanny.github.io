@@ -4,12 +4,13 @@ body {
 
 #contacts {
     text-align: center;
+    font-family: "Standard Symbols L";
 }
 
 #cv {
     margin: 0 250px;
     width: 1300px;
-    height: 1500px;
+    height: 1700px;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
 
@@ -73,10 +74,12 @@ a:hover {
     background-color: transparent;
 }
 
+p:hover,
 span:hover {
     position: relative;
 }
 
+p[aria-label]:hover:after,
 span[aria-label]:hover:after {
     content: attr(aria-label);
     padding: 4px 8px;
@@ -90,3 +93,110 @@ span[aria-label]:hover:after {
     font-size: 20px;
 }
 
+p[aria-label]:hover:after {
+    background: linear-gradient(90deg, rgba(138,180,248,1) 74%, rgba(255,255,255,1) 100%);
+    font-size: 15px;
+    color: dimgray;
+}
+
+#mainpart {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Standard Symbols L";
+}
+
+#left,
+#right {
+    margin-top: 50px;
+}
+
+#left {
+    margin-left: 20px;
+    width: 550px;
+    text-align: center;
+}
+
+#right {
+    margin-left: 90px;
+    width: 630px;
+    text-align: left;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+h4:before {
+    content: url("point.png");
+    position: relative;
+    top: 5px;
+}
+
+.ph {
+    margin-left: 10px;
+}
+
+.p {
+    margin-left: 40px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.sp {
+    width: 200px;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+}
+
+.sp:after {
+    content: "________";
+    font-size: 25px;
+    color: #8ab4f8;
+    position: relative;
+    top: 11px;
+}
+
+.jo:after {
+    content: "________________";
+    position: relative;
+    left: -40px;
+}
+
+.ja:after {
+    content: "___________";
+    position: relative;
+    left: -35px;
+}
+
+.c:after,
+.h:after {
+    content: "______________";
+    position: relative;
+    left: -50px;
+}
+
+.c:after {
+    content: "______________";
+    position: relative;
+    left: -35px;
+}
+
+.py:after {
+    content: "______";
+    position: relative;
+    left: -56px;
+}
+
+.s:after {
+    content: "____";
+    position: relative;
+    left: -35px;
+}
