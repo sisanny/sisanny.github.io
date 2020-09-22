@@ -7,19 +7,12 @@ body {
     font-family: "Standard Symbols L";
 }
 
-@media screen and (max-width: 800px) {
-    #cv{
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-}
-
 #cv {
     margin: 0 250px;
     width: 1300px;
     height: 1700px;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
-
 }
 
 h1 {
@@ -133,9 +126,10 @@ h2 {
 }
 
 h4:before {
-    content: url("point.png");
+    content: url("map-marker-alt-solid.png");
     position: relative;
     top: 5px;
+    right: 5px;
 }
 
 .ph {
