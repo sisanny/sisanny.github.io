@@ -30,11 +30,9 @@
         var markerc = new google.maps.Marker({position: cardiff, map: map});
         var markerm = new google.maps.Marker({position: maastricht, map: map});
 
-
         var infowindow =  new google.maps.InfoWindow({
             content: 'Hello World!',
-            map: map,
-            position: marker
+            map: map
         });
 
         infowindow.open(map, marker);
