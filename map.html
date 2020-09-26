@@ -30,12 +30,21 @@
         var markerc = new google.maps.Marker({position: cardiff, map: map});
         var markerm = new google.maps.Marker({position: maastricht, map: map});
 
-        marker.addListener('mouseover', function () {
-            infowindow.open(map, this);
+
+        var infowindow =  new google.maps.InfoWindow({
+            content: 'Hello World!',
+            map: map,
+            position: homeLatlng
         });
-        marker.addListener('mouseout', function() {
-            infowindow.close();
-        });
+
+        infowindow.open(map, marker);
+
+        //marker.addListener('mouseover', function () {
+        //infowindow.open(map, infowindow);
+    //});
+    //marker.addListener('mouseout', function() {
+        //infowindow.close();
+    //});
     }
 </script>
 <script defer
