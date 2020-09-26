@@ -50,7 +50,7 @@
     //});
     }
 </script>-->
-<script>
+<script  type="text/javascript">
     function initialize() {
         var i;
         var arrDestinations = [
@@ -106,7 +106,7 @@
     }
 
     function bindInfoWindow(marker, map, infowindow, html) {
-        google.maps.event.addListener(marker, 'mouseover', function() {
+        google.maps.event.addListener(marker, 'click', function() {
             infowindow.setContent(html);
             infowindow.open(map, marker);
         });
