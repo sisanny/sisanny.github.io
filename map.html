@@ -15,7 +15,7 @@
 
 <script>
     // Initialize and add the map
-    function initMap() {
+    function initMap(listener) {
         // The location of cities
         var eger = {lat: 47.903198, lng: 20.373110};
         var budapest = {lat: 47.497913, lng: 19.040236};
@@ -29,6 +29,13 @@
         var markerbp = new google.maps.Marker({position: budapest, map: map});
         var markerc = new google.maps.Marker({position: cardiff, map: map});
         var markerm = new google.maps.Marker({position: maastricht, map: map});
+
+        marker.addListener('mouseover', function () {
+            infowindow.open(map, this);
+        });
+        marker.addListener('mouseout', function() {
+            infowindow.close();
+        });
     }
 </script>
 <script defer
