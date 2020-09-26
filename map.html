@@ -13,7 +13,7 @@
 <h3>My Google Maps Demo</h3>
 <div id="map"></div>
 
-<script>
+<!--<script>
     // Initialize and add the map
     function initMap(listener) {
         // The location of cities
@@ -49,6 +49,70 @@
         //infowindow.close();
     //});
     }
+</script>-->
+<script>
+    function initialize() {
+        var i;
+        var arrDestinations = [
+            {
+                lat: 47.903198,
+                lon: 20.373110,
+                title: "Eger",
+                description: "1989 - 2009"
+            },
+            {
+                lat: 47.497913,
+                lon: 19.040236,
+                title: "Budapest",
+                description: "2011-2015"
+            },
+            {
+                lat: 51.481583,
+                lon: -3.179090,
+                title: "Cardiff",
+                description: "2010"
+            },
+            {
+                lat: 50.851368,
+                lon: 5.690972,
+                title: "Maastricht",
+                description: "2016 - present"
+            }
+        ];
+    var myOptions = {
+        zoom: 15,
+        center: new google.maps.LatLng(50.820645,-0.137376),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+    var infowindow =  new google.maps.InfoWindow({
+        content: ''
+    });
+
+    // loop over our array
+    for (i = 0; i < arrDestinations.length; i++) {
+        // create a marker
+        var marker = new google.maps.Marker({
+            title: arrDestinations[i].title,
+            position: new google.maps.LatLng(arrDestinations[i].lat, arrDestinations[i].lon),
+            map: map
+        });
+
+        // add an event listener for this marker
+        bindInfoWindow(marker, map, infowindow, "<p>" + arrDestinations[i].description + "</p>");
+    }
+    }
+
+    function bindInfoWindow(marker, map, infowindow, html) {
+        google.maps.event.addListener(marker, 'mouseover', function() {
+            infowindow.setContent(html);
+            infowindow.open(map, marker);
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <script defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCAPyLlVwFp-oCR6CB5cvPHexgLScFrA&callback=initMap">
