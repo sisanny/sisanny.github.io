@@ -31,13 +31,16 @@
         var markerm = new google.maps.Marker({position: maastricht, map: map});
 
         var infowindow =  new google.maps.InfoWindow({
-            content: 'Hello World!',
+            content: 'Eger, 1989 - 2009',
             map: map
         });
 
-        infowindow.open(map, marker);
         google.maps.event.addListener(marker, 'mouseover', function() {
             infowindow.open(map, this);
+        });
+
+        google.maps.event.addListener(marker, 'mouseout', function() {
+            infowindow.close();
         });
         //marker.addListener('mouseover', function () {
         //infowindow.open(map, infowindow);
