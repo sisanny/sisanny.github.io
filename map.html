@@ -30,7 +30,7 @@
         var markerm = new google.maps.Marker({position: maastricht, map: map});*/
 
         var locations = [
-            ['Eger', 47.903198,  20.373110]
+            ['Eger', 47.903198, 20.373110]
         ]
 
         for (i = 0; i < locations.length; i++) {
@@ -39,18 +39,19 @@
                 map: map
             });
 
-        var infowindow =  new google.maps.InfoWindow({
-            content: 'Eger, 1989 - 2009',
-            map: map
-        });
+            var infowindow = new google.maps.InfoWindow({
+                content: 'Eger, 1989 - 2009',
+                map: map
+            });
 
-        google.maps.event.addListener(marker, 'mouseover', function() {
-            infowindow.open(map, this);
-        });
+            google.maps.event.addListener(marker, 'mouseover', function () {
+                infowindow.open(map, this);
+            });
 
-        google.maps.event.addListener(marker, 'mouseout', function() {
-            infowindow.close();
-        });
+            google.maps.event.addListener(marker, 'mouseout', function () {
+                infowindow.close();
+            });
+        }
     }
 </script>
 <!--<script  type="text/javascript" >
