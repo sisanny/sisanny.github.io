@@ -16,7 +16,7 @@
     // Initialize and add the map
     function initMap(listener) {
         // The location of cities
-        var eger = {lat: 47.903198, lng: 20.373110};
+        /*var eger = {lat: 47.903198, lng: 20.373110};
         var budapest = {lat: 47.497913, lng: 19.040236};
         var cardiff = {lat: 51.481583, lng: -3.179090};
         var maastricht = {lat: 50.851368, lng: 5.690972};
@@ -27,7 +27,17 @@
         var marker = new google.maps.Marker({position: eger, map: map});
         var markerbp = new google.maps.Marker({position: budapest, map: map});
         var markerc = new google.maps.Marker({position: cardiff, map: map});
-        var markerm = new google.maps.Marker({position: maastricht, map: map});
+        var markerm = new google.maps.Marker({position: maastricht, map: map});*/
+
+        var locations = [
+            ['Eger', 47.903198,  20.373110]
+        ]
+
+        for (i = 0; i < locations.length; i++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: map
+            });
 
         var infowindow =  new google.maps.InfoWindow({
             content: 'Eger, 1989 - 2009',
@@ -41,12 +51,6 @@
         google.maps.event.addListener(marker, 'mouseout', function() {
             infowindow.close();
         });
-        //marker.addListener('mouseover', function () {
-        //infowindow.open(map, infowindow);
-    //});
-    //marker.addListener('mouseout', function() {
-        //infowindow.close();
-    //});
     }
 </script>
 <!--<script  type="text/javascript" >
