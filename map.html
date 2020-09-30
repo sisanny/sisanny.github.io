@@ -29,6 +29,9 @@
         var markerc = new google.maps.Marker({position: cardiff, map: map});
         var markerm = new google.maps.Marker({position: maastricht, map: map});*/
 
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 5, center: {lat: 50.851368, lng: 5.690972}});
+
         var locations = [
             ['Eger', 47.903198, 20.373110]
         ];
