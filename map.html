@@ -38,7 +38,7 @@
                 //position: new google.maps.LatLng(locations[i][1], locations[i][2]),
                 position: {lat: locations[i][1], lng: locations[i][2]},
                 map: map
-            })};
+            });
 
             var infowindow = new google.maps.InfoWindow({
                 content: 'Eger, 1989 - 2009',
@@ -52,6 +52,7 @@
             google.maps.event.addListener(marker, 'mouseout', function () {
                 infowindow.close();
             });
+        }
     }
 </script>
 <!--<script  type="text/javascript" >
