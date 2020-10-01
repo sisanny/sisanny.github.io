@@ -63,6 +63,7 @@
                 position: {lat: locations[i][1], lng: locations[i][2]},
                 map: map
             });
+            bindInfoWindow(marker, map, infowindow, "<p>" + locations[i][0] + "</p>");
         }
     }
 
