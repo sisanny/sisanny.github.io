@@ -53,8 +53,7 @@
         ];
 
         var infowindow = new google.maps.InfoWindow({
-            content: '',
-            map: map
+            content: ''
         });
 
 
@@ -69,7 +68,7 @@
 
     function bindInfoWindow(marker, map, infowindow, html) {
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.setContent(html);
+            infowindow.content = html;
             infowindow.open(map, marker);
         });
     }
