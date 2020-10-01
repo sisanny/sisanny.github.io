@@ -57,13 +57,21 @@
             map: map
         });
 
+
         for (let i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
-                title: locations[i][0],
                 position: {lat: locations[i][1], lng: locations[i][2]},
                 map: map
             });
+            bindInfoWindow(marker, map, infowindow, "<p>" + arrDestinations[i][0] + "</p>")
         }
+    }
+
+    function bindInfoWindow(marker, map, infowindow, html) {
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent(html);
+            infowindow.open(map, marker);
+        });
     }
 </script>
 <!--<script  type="text/javascript" >
