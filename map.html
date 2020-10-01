@@ -20,7 +20,7 @@
         var budapest = {lat: 47.497913, lng: 19.040236};
         var cardiff = {lat: 51.481583, lng: -3.179090};
         var maastricht = {lat: 50.851368, lng: 5.690972};
-        // The map, centered at Eger
+        The map, centered at Eger
         var map = new google.maps.Map(
             document.getElementById('map'), {zoom: 5, center: maastricht});
         // The marker, positioned at Eger
@@ -62,13 +62,13 @@
                 position: {lat: locations[i][1], lng: locations[i][2]},
                 map: map
             });
-            bindInfoWindow(marker, map, infowindow, locations[i][0]);
+            bindInfoWindow(marker, map, infowindow, "<p>" + locations[i][0] + "</p>");
         }
     }
 
     function bindInfoWindow(marker, map, infowindow, html) {
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.content = html;
+            infowindow.setContent(html);
             infowindow.open(map, marker);
         });
     }
