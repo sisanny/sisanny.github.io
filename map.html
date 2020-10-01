@@ -59,6 +59,7 @@
 
         for (let i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
+                title: locations[i][0],
                 position: {lat: locations[i][1], lng: locations[i][2]},
                 map: map
             });
