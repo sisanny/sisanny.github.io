@@ -60,17 +60,13 @@
         for (let i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
                 position: {lat: locations[i][1], lng: locations[i][2]},
-                map: map
+                map: map,
+                title: locations[i][0]
             });
-            bindInfoWindow(marker, map, infowindow, "<p>" + locations[i][0] + "</p>");
+            google.maps.event.addListener(marker, 'mouseover', function () {
+                infowindow.open(map, this);
+            });
         }
-    }
-
-    function bindInfoWindow(marker, map, infowindow, html) {
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.content = html;
-            infowindow.open(map, marker);
-        });
     }
 </script>
 <!--<script  type="text/javascript" >
