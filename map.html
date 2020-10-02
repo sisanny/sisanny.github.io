@@ -63,8 +63,9 @@
                 map: map,
                 title: locations[i][0]
             });
-            infowindow.content = marker.title;
-
+            marker.addListener("click", () => {
+                infowindow.open(map, marker);
+            });
         }
     }
 </script>
