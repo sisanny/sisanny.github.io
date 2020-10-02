@@ -65,6 +65,7 @@
             });
             marker.addListener("click", () => {
                 infowindow.open(map, marker);
+                infowindow.content = marker.title;
             });
         }
     }
