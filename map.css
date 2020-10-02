@@ -1,5 +1,5 @@
 body {
-    background-color:  #2e4053;
+    background-color:  whitesmoke;
 }
 
 #map {
@@ -19,6 +19,7 @@ body {
     height: 1700px;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
+    border: 2px solid dimgray;
 }
 
 h1 {
