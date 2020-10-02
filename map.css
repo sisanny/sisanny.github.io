@@ -19,14 +19,15 @@ body {
     height: 1700px;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
-    border: 2px solid dimgray;
+    border-left: 2px solid dimgray;
+    border-right: 2px solid dimgray;
+    mso-border-shadow: yes;
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
     margin-top: 15px;
-    color: #FFA500;
 }
 
 p:hover,
