@@ -1,6 +1,5 @@
 body {
-    background-image: url("bg.png");
-    background-repeat: no-repeat;
+    background-color: dimgray;
 }
 
 #map {
@@ -15,7 +14,7 @@ body {
 }
 
 #cv {
-    margin: 0 250px;
+    margin: -15px 250px;
     width: 1300px;
     height: 1700px;
     background-color: whitesmoke;
