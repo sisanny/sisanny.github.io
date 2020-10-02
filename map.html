@@ -54,11 +54,11 @@
 
             let infowindow = new google.maps.InfoWindow({
                 content: marker.title,
-                //position: marker.position
+                position: marker.position
             });
 
             marker.addListener("click", () => {
-                infowindow.open(map,marker.position);
+                infowindow.open(map,marker);
             });
         }
     }
