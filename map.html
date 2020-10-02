@@ -59,12 +59,8 @@
                 title: locations[i][0]
             });
 
-            let infowindow = new google.maps.InfoWindow({
-                content: marker.title
-            });
-
-            google.maps.event.addListener(marker, 'click', function() {
-                infowindow.open(map,{lat: locations[i][1], lng: locations[i][2]});
+            marker.addListener("click", () => {
+                infowindow.open(map, marker);
             });
         }
     }
