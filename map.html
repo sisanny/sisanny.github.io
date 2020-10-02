@@ -62,11 +62,11 @@
                 map: map,
                 title: locations[i][0]
             });
-        }
 
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
-        });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+            });
+        }
     }
 </script>
 <!--<script  type="text/javascript" >
