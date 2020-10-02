@@ -64,76 +64,64 @@
             });
 
             marker.addListener("click", () => {
-                infowindow.open(marker);
+                infowindow.open(map,marker);
             });
         }
     }
 </script>
-<h1>Anna Gyulavari</h1>
-<!--<script  type="text/javascript" >
-    function initialize() {
-        var i;
-        var arrDestinations = [
-            {
-                lat: 47.903198,
-                lon: 20.373110,
-                title: "Eger",
-                description: "1989 - 2009"
-            },
-            {
-                lat: 47.497913,
-                lon: 19.040236,
-                title: "Budapest",
-                description: "2011-2015"
-            },
-            {
-                lat: 51.481583,
-                lon: -3.179090,
-                title: "Cardiff",
-                description: "2010"
-            },
-            {
-                lat: 50.851368,
-                lon: 5.690972,
-                title: "Maastricht",
-                description: "2016 - present"
-            }
-        ];
-    var myOptions = {
-        zoom: 15,
-        center: new google.maps.LatLng(50.820645,-0.137376),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-
-    var infowindow =  new google.maps.InfoWindow({
-        content: ''
-    });
-
-    // loop over our array
-    for (i = 0; i < arrDestinations.length; i++) {
-        // create a marker
-        var marker = new google.maps.Marker({
-            title: arrDestinations[i].title,
-            position: new google.maps.LatLng(arrDestinations[i].lat, arrDestinations[i].lon),
-            map: map
-        });
-
-        // add an event listener for this marker
-        bindInfoWindow(marker, map, infowindow, "<p>" + arrDestinations[i].description + "</p>");
-    }
-    }
-
-    function bindInfoWindow(marker, map, infowindow, html) {
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.setContent(html);
-            infowindow.open(map, marker);
-        });
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>-->
+<div id="cv">
+    <h1>Anna Gyulavari</h1>
+    <div id="contacts">
+    <p>gyulavari.anna89@gmail.com</p>
+    <p>+36304607725</p>
+    <p>Maastricht, 6221 TT, Netherlands</p>
+</div>
+    <div id="mainpart">
+        <div id="left">
+            <div id="eger"><h2>About me</h2>
+                <p>blablalallallallal</p>
+            </div>
+            <h2>IT Skills</h2>
+            <div class="skills">
+                <p class="sp h">HTML</p>
+                <p class="sp c">CSS</p>
+                <p class="sp ja">Java</p>
+                <p class="sp py">Python</p>
+                <p class="sp s">SQL</p>
+                <p class="sp jo" aria-label="eager to learn new things">Joker</p>
+            </div>
+            <h2> Skills</h2>
+            <div class="skills soft">
+                <p class="ss">Communication</p>
+                <p class="ss">Teamwork</p>
+                <p class="ss">Empathy</p>
+                <p class="ss">Critical Thinking</p>
+                <p class="ss">Responsibility</p>
+                <p class="ss">Self-Motivation</p>
+            </div>
+            <div><h2>Languages</h2>
+                <p id="cardiff">English</p>
+                <p>Hungarian</p>
+            </div>
+        </div>
+        <div id="right">
+            <div id="maastricht"><h2 class="ph">Education</h2>
+                <h4>2020 - 2021  Junior Software Developer course, Green Fox Academy</h4>
+                <p class="p">blabla</p>
+                <h4>2020 - 2020  #StayHomeCodingCamp, Green Fox Academy</h4>
+                <p class="p">blabla</p>
+                <h4>2016 - 2020  Psychology and Neuroscience, Maastricht University</h4>
+                <p class="p">blabla</p>
+            </div>
+            <div><h2 class="ph">Work</h2>
+                <h4>2016 - 2020  McDonald's, Maastricht</h4>
+                <p class="p">blabla</p>
+                <h4 id="bp">2012 - 2016  City Sightseeing Budapest, Budapest</h4>
+                <p class="p">blabla</p>
+            </div>
+        </div>
+    </div>
+</div>
 <script defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCAPyLlVwFp-oCR6CB5cvPHexgLScFrA&callback=initMap">
 </script>
