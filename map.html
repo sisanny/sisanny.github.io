@@ -63,8 +63,8 @@
                 content: marker.title
             });
 
-            google.maps.event.addListener(locations[i], 'click', function() {
-                infowindow.open(map,locations[i]);
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
             });
         }
     }
