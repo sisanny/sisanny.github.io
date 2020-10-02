@@ -63,7 +63,7 @@
                 content: marker.title
             });
 
-            google.maps.event.addListener({lat: locations[i][1], lng: locations[i][2]}, 'click', function() {
+            google.maps.event.addListener(marker, 'click', function() {
                 infowindow.open(map,{lat: locations[i][1], lng: locations[i][2]});
             });
         }
