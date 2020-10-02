@@ -56,10 +56,6 @@
             content: ''
         });
 
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
-        });
-
         for (let i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
                 position: {lat: locations[i][1], lng: locations[i][2]},
@@ -67,6 +63,10 @@
                 title: locations[i][0]
             });
         }
+
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
     }
 </script>
 <!--<script  type="text/javascript" >
