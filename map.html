@@ -56,16 +56,15 @@
             content: ''
         });
 
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
 
         for (let i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
                 position: {lat: locations[i][1], lng: locations[i][2]},
                 map: map,
                 title: locations[i][0]
-            });
-            marker.addListener("click", () => {
-                infowindow.open(map, marker);
-                infowindow.content = marker.title;
             });
         }
     }
