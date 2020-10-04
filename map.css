@@ -2,9 +2,21 @@ body {
     background-color: dimgray;
 }
 
+#container {}
+
+#layer1 {
+    position:absolute;
+    z-index: 1;
+}
+
+#layer2 {
+    position:absolute;
+    z-index: 2;
+}
+
 #map {
     margin: 0;
-    height: 300px;  /* The height is 400 pixels */
+    height: 1000px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
 }
 
