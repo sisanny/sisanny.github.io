@@ -5,7 +5,7 @@
         left: 0;
         z-index: -1;
         margin: auto;
-        height: 2000px; /* The height is 400 pixels */
+        height: 100%; /* The height is 400 pixels */
         width: 100%; /* The width is the width of the web page */
 }
 
