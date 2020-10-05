@@ -69,13 +69,13 @@ p[aria-label]:hover:after {
 
 #left {
     margin-left: 20px;
-    width: 30%; /*550px*/
+    width: 40%; /*550px*/
     text-align: center;
 }
 
 #right {
-    /*margin-left: 90px;*/
-    width: 60%; /*630px*/
+    margin-left: 90px;
+    width: 50%; /*630px*/
     text-align: left;
 }
 
