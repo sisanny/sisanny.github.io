@@ -1,5 +1,5 @@
 body {
-    background: url("pexels-fwstudio-139309.jpg");
+    background: url(".idea/application/pexels-fwstudio-139309.jpg");
 }
 
 main {
@@ -92,8 +92,8 @@ a:hover {
 }
 
 #extra {
-    margin: 620px 0 50px -30px;
-    background-color: lime;
+    margin: 320px 0 50px -30px;
+    background-color: aqua;
     width: 30px;
     height: 100px;
 }
