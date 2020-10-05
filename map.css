@@ -1,13 +1,14 @@
 
-#map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 2000px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
+@media only screen and (max-width: 600px) {
+    #map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 2000px; /* The height is 400 pixels */
+        width: 100%; /* The width is the width of the web page */
+    }
 }
-
 #contacts {
     text-align: center;
     font-family: "Standard Symbols L";
