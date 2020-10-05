@@ -1,27 +1,25 @@
-@media only screen and (max-width: 1700px) {
-    body{
-        background-color: #8ab4f8;
-    }
-}
-    #map {
+
+#map {
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
-        height: 2000px; /* The height is 400 pixels */
+        margin: auto;
+        height: 100%; /* The height is 400 pixels */
         width: 100%; /* The width is the width of the web page */
-    }
-#contacts {
-    text-align: center;
-    font-family: "Standard Symbols L";
 }
 
 #cv {
-    margin: 200px 250px 0 250px;
-    width: 1300px;
-    height: 1700px;
+    margin: auto;
+    width: 70%;
+    height: 100%;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
+}
+
+#contacts {
+    text-align: center;
+    font-family: "Standard Symbols L";
 }
 
 h1 {
