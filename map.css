@@ -73,7 +73,7 @@ p[aria-label]:hover:after {
 
 .col-2 {
     margin-left: 90px;
-    width: 50%; 
+    width: 50%;
     text-align: left;
 }
 
@@ -90,8 +90,8 @@ p[aria-label]:hover:after {
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .col- {
-        width: 100%;
+    #cv {
+        width: 50%;
     }
 }
 
