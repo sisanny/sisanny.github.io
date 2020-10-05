@@ -5,19 +5,18 @@
         left: 0;
         z-index: -1;
         margin: auto;
-        height: 100%; /* The height is 400 pixels */
+        height: 2000px; /* The height is 400 pixels */
         width: 100%; /* The width is the width of the web page */
 }
 
 #cv {
-    margin-top: 250px;
+    margin-top: 220px;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    height: 1700px;
+    height: 1600px;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
-    min-width: 300px;
 }
 
 #contacts {
