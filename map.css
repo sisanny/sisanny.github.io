@@ -1,12 +1,13 @@
 
 #map {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        margin: auto;
-        height: 2000px; /* The height is 400 pixels */
-        width: 100%; /* The width is the width of the web page */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: auto;
+    height: 2000px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+    max-width: none !important;
 }
 
 #cv {
