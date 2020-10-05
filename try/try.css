@@ -1,15 +1,1 @@
-.yellow {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    width: 200px;
-    height: 200px;
-    background-color: #FFA500;
-}
 
-.blue {
-    width: 50px;
-    height: 50px;
-    background-color: #8ab4f8;
-}
