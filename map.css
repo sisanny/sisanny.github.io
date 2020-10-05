@@ -17,6 +17,7 @@
     height: 1700px;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
+    min-width: 800px;
 }
 
 #contacts {
