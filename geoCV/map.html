@@ -35,6 +35,8 @@
 
             marker.addListener("click", () => {
                 infowindow.open(map);
+                const targetParagraph = document.getElementById(marker.title);
+                targetParagraph.style.color = "red";
             });
         }
     }
@@ -49,7 +51,7 @@
         <div id="mainpart">
             <div class="col-1">
                 <h2>About me</h2>
-                <div id="eger">
+                <div id="Eger, 1989 - 2009">
                     <p>blablalallallallal</p>
                 </div>
                 <h2>IT Skills</h2>
@@ -72,14 +74,14 @@
                 </div>
                 <h2>Languages</h2>
                 <div>
-                    <p id="cardiff">English</p>
+                    <p id="Cardiff, 2010">English</p>
                     <p>Hungarian</p>
                 </div>
             </div>
             <div class="hidden"></div>
             <div class="col-2">
-                <h2>Education</h2>
-                <div id="maastricht">
+                <h2 id="Maastricht 2016 - present">Education</h2>
+                <div>
                     <h4>2020 - 2021  Junior Software Developer course, Green Fox Academy</h4>
                     <p class="p">blabla</p>
                     <h4>2020 - 2020  #StayHomeCodingCamp, Green Fox Academy</h4>
@@ -91,7 +93,7 @@
                 <div>
                     <h4>2016 - 2020  McDonald's, Maastricht</h4>
                     <p class="p">blabla</p>
-                    <h4 id="bp">2012 - 2016  City Sightseeing Budapest, Budapest</h4>
+                    <h4 id="Budapest, 2011 - 2016">2012 - 2016  City Sightseeing Budapest, Budapest</h4>
                     <p class="p">blabla</p>
                 </div>
             </div>
