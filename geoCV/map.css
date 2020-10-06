@@ -51,6 +51,11 @@
         width: 100%;
         text-align: center;
     }
+
+    .col-2 {
+        border-top: 1px dotted #8ab4f8;
+        border-right: 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
