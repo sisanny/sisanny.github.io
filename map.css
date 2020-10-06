@@ -20,13 +20,9 @@
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width : 1440px) {
+/*@media screen and (max-width : 1440px) {
     #cv {
         width: 100%;
-    }
-
-    .col-2 {
-        margin-left: 0;
     }
 
     #mainpart {
@@ -38,14 +34,15 @@
         width: 100%;
         text-align: center;
     }
-}
+
+    .col-2 {
+        margin-left: -60px;
+    }
+}*/
 
 @media screen and (max-width: 600px) {
     #cv {
         width: 100%;
-    }
-    .col-2 {
-        margin-left: 0;
     }
 
     #mainpart {
@@ -56,6 +53,10 @@
     .col-2 {
         width:100%;
         text-align: center;
+    }
+
+    .col-2 {
+        margin-left: -60px;
     }
 }
 
@@ -122,7 +123,7 @@ p[aria-label]:hover:after {
 
 h2 {
     margin-top: 40px;
-    color: #FFA500;
+    color: #8ab4f8;
 }
 
 h4:before {
