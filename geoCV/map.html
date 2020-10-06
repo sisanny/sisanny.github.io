@@ -37,7 +37,8 @@
 
             marker.addListener("click", () => {
                 infowindow.open(map);
-                targetParagraph.href = marker.title;
+                targetParagraph.href = "#marker.title";
+                targetParagraph.style.color = "red";
             });
         }
     }
