@@ -126,7 +126,7 @@ p[aria-label]:hover:after {
 #mainpart {
     display: flex;
     flex-wrap: wrap;
-    font-family: "Standard Symbols L";
+    font-family: "Roboto Light", serif;
 }
 
 .col- {
@@ -141,6 +141,7 @@ p[aria-label]:hover:after {
 
 .col-2 {
     margin-left: 10px;
+    margin-right: 10px;
     width: 650px;  /*50%, 650px*/
     text-align: left;
 }
