@@ -111,13 +111,14 @@ p[aria-label]:hover:after {
 }
 
 .col-2 {
+    margin-left: 10px;
     width: 650px;  /*50%, 650px*/
     text-align: left;
     border: 1px solid #8ab4f8;
 }
 
 .hidden {
-    width: 90px;
+    width: 80px;
     border: 1px solid black;
 }
 
