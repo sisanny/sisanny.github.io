@@ -96,6 +96,7 @@ p[aria-label]:hover:after {
 
 h2 {
     margin-top: 40px;
+    color: red;
 }
 
 h4:before {
