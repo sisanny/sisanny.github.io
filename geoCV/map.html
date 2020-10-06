@@ -32,6 +32,10 @@
                 content: marker.title,
                 position: marker.position
             });
+
+            marker.addListener("click", () => {
+                infowindow.open(map);
+            });
         }
     }
     </script>
