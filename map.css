@@ -24,6 +24,10 @@
     #cv{
         width: 100%;
     }
+    .col-1 {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
