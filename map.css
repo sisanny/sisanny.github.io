@@ -25,10 +25,15 @@
         width: 100%;
     }
 
+    .col-2 {
+        margin-left: 0;
+    }
+
     #mainpart {
         display: block;
     }
-    
+
+    .col-1,
     .col-2 {
         width: 100%;
         text-align: center;
@@ -39,15 +44,18 @@
     #cv {
         width: 100%;
     }
+    .col-2 {
+        margin-left: 0;
+    }
 
     #mainpart {
         display: block;
     }
 
+    .col-1,
     .col-2 {
         width:100%;
         text-align: center;
-        margin-left: 0;
     }
 }
 
@@ -114,6 +122,7 @@ p[aria-label]:hover:after {
 
 h2 {
     margin-top: 40px;
+    color: #FFA500;
 }
 
 h4:before {
