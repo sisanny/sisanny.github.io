@@ -21,17 +21,18 @@
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width : 1440px) {
-    #cv{
+    #cv {
         width: 100%;
-    }
-    .col-1 {
-        margin-left: 35%;
     }
 }
 
 @media screen and (max-width: 600px) {
     #cv {
         width: 100%;
+    }
+    .col-1 {
+        width: 80%;
+        margin: auto;
     }
     .col-2 {
         text-align: center;
