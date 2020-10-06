@@ -100,7 +100,7 @@ h2 {
 }
 
 h4:before {
-    content: url("application/map-marker-alt-solid.png");
+    content: url("markergood.png");
     position: relative;
     top: 5px;
     right: 5px;
