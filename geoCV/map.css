@@ -47,7 +47,10 @@
 
     #mainpart {
         display: block;
+        text-align: center;
     }
+
+    .col-1 { margin: auto}
 
 }
 
