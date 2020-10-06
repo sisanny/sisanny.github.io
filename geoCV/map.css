@@ -43,6 +43,11 @@
 
     #mainpart {
         display: block;
+    }
+
+    col-1,
+    .col-2 {
+        width: 100%;
         text-align: center;
     }
 }
@@ -110,10 +115,11 @@ p[aria-label]:hover:after {
 
 h2 {
     margin-top: 40px;
+    color: #8ab4f8;
 }
 
 h4:before {
-    content: url("geoCV/markergood.png");
+    content: url("markergood.png");
     position: relative;
     top: 5px;
     right: 5px;
