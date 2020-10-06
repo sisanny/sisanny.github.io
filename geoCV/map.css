@@ -17,10 +17,27 @@
     height: 100%;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
+    border: 1px solid red;
 }
 
 /* On screens that are 992px (1440px) wide or less, go from four columns to two columns */
 @media screen and (max-width : 1800px) {
+    #cv {
+        width: 90%;
+    }
+
+    #mainpart {
+        display: block;
+    }
+
+    .col-1,
+    .col-2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 1440px) {
     #cv {
         width: 100%;
     }
@@ -96,7 +113,6 @@ p[aria-label]:hover:after {
     display: flex;
     flex-wrap: wrap;
     font-family: "Standard Symbols L";
-    border: 1px solid red;
 }
 
 .col- {
