@@ -24,6 +24,10 @@
     #cv {
         width: 100%;
     }
+    #mainpart {
+        display: block;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -33,6 +37,10 @@
     .col-2 {
         text-align: center;
         margin-left: 15px;
+    }
+    #mainpart {
+        display: block;
+        text-align: center;
     }
 }
 
