@@ -30,16 +30,9 @@
     #cv {
         width: 100%;
     }
-    .col-1 {
-        width: 80%;
-        margin: auto;
-    }
     .col-2 {
         text-align: center;
         margin-left: 20px;
-    }
-    .skills {
-        margin-left: auto;
     }
 }
 
