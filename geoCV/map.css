@@ -20,7 +20,7 @@
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-/*@media screen and (max-width : 1440px) {
+@media screen and (max-width : 1440px) {
     #cv {
         width: 100%;
     }
@@ -34,11 +34,7 @@
         width: 100%;
         text-align: center;
     }
-
-    .col-2 {
-        margin-left: -60px;
-    }
-}*/
+}
 
 @media screen and (max-width: 600px) {
     #cv {
@@ -49,9 +45,6 @@
         display: block;
         text-align: center;
     }
-
-    .col-1 { margin: auto}
-
 }
 
 #contacts {
