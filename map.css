@@ -28,8 +28,7 @@
     #mainpart {
         display: block;
     }
-
-    .col-1
+    
     .col-2 {
         width: 100%;
         text-align: center;
@@ -40,18 +39,15 @@
     #cv {
         width: 100%;
     }
-    .col-2 {
-        margin-left: 0;
-    }
 
     #mainpart {
         display: block;
     }
 
-    .col-1,
     .col-2 {
         width:100%;
         text-align: center;
+        margin-left: 0;
     }
 }
 
