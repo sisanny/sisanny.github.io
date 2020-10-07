@@ -41,13 +41,10 @@
             });
 
             const targetParagraph = document.getElementById(marker.title);
-            //const anchorMarker = document.getElementById(marker);
-            //const markerTitle = "#" + marker.title;
 
             marker.addListener("click", () => {
                 infowindow.open(map);
-                //anchorMarker.href = markerTitle;
-                //targetParagraph.style.color = "red";
+                targetParagraph.style.color = "red";
             });
         }
     }
