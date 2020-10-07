@@ -52,10 +52,6 @@
         text-align: center;
     }
 
-    .col-1 {
-        border-right: none;
-    }
-
     .col-2 {
         border-top: 1px dotted #8ab4f8;
         border-right: 10px;
@@ -79,10 +75,6 @@
 
     .hidden {
         display: none;
-    }
-
-    .col-1 {
-        border-right: none;
     }
 
     .col-2 {
@@ -143,9 +135,9 @@ p[aria-label]:hover:after {
 
 .col-1 {
     margin-left: 10px;
+    margin-right: 10px;
     width: 550px; /*40%, 550px*/
     text-align: center;
-    border-right: 1px dotted #8ab4f8;
 }
 
 .col-2 {
