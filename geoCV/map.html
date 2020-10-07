@@ -42,9 +42,18 @@
 
             const targetParagraph = document.getElementById(marker.title);
 
+            let currentColor = "";
+
             marker.addListener("click", () => {
                 infowindow.open(map);
-                targetParagraph.style.color = "red";
+                currentColor = "red";
+                if (currentColor == "red") {
+                 targetParagraph.style.color = "black";
+                 currentColor = "black";
+                } else {
+                    targetParagraph.style.color = "red";
+                    currentColor = "red";
+                }
             });
         }
     }
