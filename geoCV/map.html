@@ -29,8 +29,10 @@
                 url: '#' + locations[i][0]
             });
 
+            const markerTitle = marker.url;
+
             google.maps.event.addListener(marker, 'click', function() {
-                window.location.href = marker.url;
+                window.location.href = markerTitle;
             });
 
             let infowindow = new google.maps.InfoWindow({
