@@ -84,6 +84,7 @@
 
     .hidden {
         width: 10px;
+        ;
     }
 }
 
@@ -128,6 +129,16 @@ p[aria-label]:hover:after {
     flex-wrap: wrap;
     font-family: "Roboto Light", serif;
 }
+
+/*#mainpart:after {
+    content:"";
+    position: absolute;
+    top: 430px;
+    bottom: -330px;
+    left: 48%;
+    border-left: 2px dotted #8ab4f8;
+    transform: translate(-50%);
+}*/
 
 .col- {
     margin-top: 50px;

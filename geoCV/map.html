@@ -47,15 +47,21 @@
             //kene egy function ami return color?
             marker.addListener("click", () => {
                 infowindow.open(map);
-                currentColor = "red";
-                if (currentColor == "red") {
-                 targetParagraph.style.color = "black";
-                 currentColor = "black";
-                } else {
-                    targetParagraph.style.color = "red";
-                    currentColor = "red";
-                }
+                currentColor = targetParagraph.style.color;
+                targetParagraph.style.color = changeColor(currentColor);
             });
+        }
+
+        function changeColor(curColor) {
+            let newColor = "";
+            if (curColor == "red") {
+                newColor = "black";
+                curColor = "black";
+            } else {
+                newColor= "red";
+                curColor = "red";
+            }
+            return newColor;
         }
     }
     </script>
