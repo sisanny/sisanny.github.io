@@ -17,7 +17,7 @@
     height: 100%;
     background-color: whitesmoke;
     font-family: 'Architects Daughter', cursive;
-    border: 1px solid red;
+    border: 1px solid black;
 }
 
 /* On screens that are 992px (1440px) wide or less, go from four columns to two columns */

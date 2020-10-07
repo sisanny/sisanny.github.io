@@ -25,7 +25,12 @@
                 animation: google.maps.Animation.DROP,
                 position: {lat: locations[i][1], lng: locations[i][2]},
                 map: map,
-                title: locations[i][0]
+                title: locations[i][0],
+                url: '#' + locations[i][0]
+            });
+
+            google.maps.event.addListener(marker, 'click', function() {
+                window.location.href = marker.url;
             });
 
             let infowindow = new google.maps.InfoWindow({
@@ -34,12 +39,12 @@
             });
 
             const targetParagraph = document.getElementById(marker.title);
-            const anchorMarker = document.getElementById(marker);
-            const markerTitle = "#" + marker.title;
+            //const anchorMarker = document.getElementById(marker);
+            //const markerTitle = "#" + marker.title;
 
             marker.addListener("click", () => {
                 infowindow.open(map);
-                anchorMarker.href = markerTitle;
+                //anchorMarker.href = markerTitle;
                 targetParagraph.style.color = "red";
             });
         }
