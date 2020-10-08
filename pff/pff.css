@@ -131,13 +131,12 @@ h4:before {
 
 .sp {
     width: 120px;
-    border-bottom: 1px solid #FF52E5;
+    border-bottom: 2px solid #FF52E5;
     padding-bottom: 5px;
 }
 
 .sp:after {
     font-size: 40px;
-    color: transparent;
     position: relative;
     top: 7px;
     color: whitesmoke;
