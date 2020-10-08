@@ -1,0 +1,164 @@
+
+#cv {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    height: 100%;
+    /*font-family: 'Architects Daughter', cursive;*/
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Roboto Light", serif;
+}
+
+/* On screens that are 992px (1440px) wide or less, go from four columns to two columns */
+@media screen and (max-width : 1800px) {
+    #cv {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    #cv {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #cv {
+        width: 100%;
+    }
+}
+
+#contacts {
+    text-align: center;
+    padding-top: 15px;
+    border-bottom: 1px dotted whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    color: whitesmoke;
+}
+
+p[aria-label]:hover:after {
+    background: transparent;
+    font-size: 15px;
+    color: white;
+}
+
+.col-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 350px; /*40%, 550px*/
+    text-align: center;
+    background-image: linear-gradient( 135deg, #F6D242 10%, #FF52E5 100%);
+    color: whitesmoke;
+}
+
+.col-2 {
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 600px;  /*50%, 650px*/
+    text-align: left;
+    background-color: white;
+    border-right: 1px solid #F6D242;
+    border-bottom: 1px solid #F6D242;
+    border-top: 1px solid #F6D242;
+}
+
+.col-2  h2 {
+    background-image: radial-gradient(#FF52E5 30%, #F6D242 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 40px;
+}
+
+.col-1 h2 {
+    color: whitesmoke;
+    margin-bottom: 0;
+
+}
+
+h4:before {
+    content: "o";
+    background-image: linear-gradient(30deg, #FF52E5 30%, #F6D242 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*content: url("markergood.png");*/
+    position: relative;
+    right: 20px;
+}
+
+.p {
+    margin-left: 40px;
+}
+
+.skills {
+    margin-bottom: 15px;
+    border-bottom: 1px dotted whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.sp {
+    width: 120px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.sp:after {
+    font-size: 34px;
+    color: transparent;
+    position: relative;
+    top: 10px;
+}
+
+.jo:after {
+    content: "_______";
+    position: relative;
+    left: -45px;
+}
+
+.ja:after {
+    content: "______";
+    position: relative;
+    left: -35px;
+}
+
+.c:after,
+.h:after {
+    content: "_______";
+    position: relative;
+    left: -53px;
+}
+
+.c:after {
+    content: "_______";
+    position: relative;
+    left: -35px;
+}
+
+.py:after {
+    content: "____";
+    position: relative;
+    left: -56px;
+}
+
+.s:after {
+    content: "____";
+    position: relative;
+    left: -35px;
+}
+
+.ss {
+    width: 120px;
+}
+
+.work,
+.edu {
+    border-left: 1px solid #F6D242;
+    padding-left: 15px;
+}
