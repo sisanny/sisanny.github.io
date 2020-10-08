@@ -123,47 +123,47 @@ h4:before {
 }
 
 .sp:after {
-    font-size: 34px;
+    font-size: 42px;
     color: transparent;
     position: relative;
-    top: 10px;
-}
-
-.jo:after {
-    content: "_______";
-    position: relative;
-    left: -45px;
+    top: 7px;
+    color: #FF52E5;
 }
 
 .ja:after {
-    content: "______";
+    content: "____";
     position: relative;
     left: -35px;
 }
 
-.c:after,
 .h:after {
-    content: "_______";
+    content: "____";
     position: relative;
     left: -53px;
 }
 
 .c:after {
-    content: "_______";
+    content: "____";
     position: relative;
     left: -35px;
 }
 
 .py:after {
-    content: "____";
+    content: "__";
     position: relative;
-    left: -56px;
+    left: -70px;
 }
 
 .s:after {
     content: "____";
     position: relative;
     left: -35px;
+}
+
+.jo:after {
+    content: "______";
+    position: relative;
+    left: -45px;
 }
 
 .ss {
