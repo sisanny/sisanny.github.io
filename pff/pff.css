@@ -27,6 +27,50 @@
     #cv {
         width: 100%;
     }
+
+    .sp:after {
+        font-size: 40px;
+        color: transparent;
+        position: relative;
+        top: 10px;
+        color: #FF52E5;
+    }
+
+    .ja:after {
+        content: "____";
+        position: relative;
+        left: -45px;
+    }
+
+    .h:after {
+        content: "____";
+        position: relative;
+        left: -53px;
+    }
+
+    .c:after {
+        content: "____";
+        position: relative;
+        left: -43px;
+    }
+
+    .py:after {
+        content: "__";
+        position: relative;
+        left: -70px;
+    }
+
+    .s:after {
+        content: "____";
+        position: relative;
+        left: -45px;
+    }
+
+    .jo:after {
+        content: "______";
+        position: relative;
+        left: -42px;
+    }
 }
 
 #contacts {
