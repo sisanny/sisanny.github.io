@@ -4,7 +4,6 @@
     margin-left: auto;
     width: 60%;
     height: 100%;
-    /*font-family: 'Architects Daughter', cursive;*/
     display: flex;
     flex-wrap: wrap;
     font-family: "Roboto Light", serif;
@@ -15,39 +14,17 @@
     #cv {
         width: 90%;
     }
-    .sp:after {
-        font-size: 40px;
-        color: transparent;
-        position: relative;
-        top: 10px;
-        color: #FFA500;
-    }
 }
 
 @media screen and (max-width : 1440px) {
     #cv {
         width: 100%;
     }
-    .sp:after {
-        font-size: 40px;
-        color: transparent;
-        position: relative;
-        top: 10px;
-        color: #FFA500;
-    }
 }
 
 @media screen and (max-width: 600px) {
     #cv {
         width: 100%;
-    }
-
-    .sp:after {
-        font-size: 40px;
-        color: transparent;
-        position: relative;
-        top: 10px;
-        color: #FFA500;
     }
 }
 
@@ -84,6 +61,7 @@ p[aria-label]:hover:after {
 }
 
 .col-1 {
+    font-family: 'Architects Daughter', cursive;
     padding-left: 10px;
     padding-right: 10px;
     width: 350px; /*40%, 550px*/
@@ -108,6 +86,7 @@ p[aria-label]:hover:after {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 40px;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .col-1 h2 {
@@ -140,8 +119,8 @@ h4:before {
 
 .sp {
     width: 120px;
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
+    /*border-bottom: 1px solid white;
+    padding-bottom: 5px;*/
 }
 
 .sp:after {
@@ -149,7 +128,8 @@ h4:before {
     color: transparent;
     position: relative;
     top: 7px;
-    color: #FF52E5;
+    color: whitesmoke;
+    font-family: "Roboto Light";
 }
 
 .ja:after {
