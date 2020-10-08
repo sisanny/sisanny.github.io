@@ -85,7 +85,6 @@ h4:before {
     background-image: linear-gradient(30deg, #FF52E5 30%, #F6D242 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /*content: url("markergood.png");*/
     position: relative;
     right: 20px;
 }
@@ -159,6 +158,27 @@ h4:before {
 
 .work,
 .edu {
-    border-left: 1px solid #F6D242;
+    border-left: 1px solid #F6D242 ;
     padding-left: 15px;
+}
+
+.linkbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 110px;
+    margin-bottom: 15px;
+}
+
+.git {
+    width: 30px;
+    height: 31px;
+    background-image: url("github-brands.png");
+    margin-right: 50px;
+}
+
+.linkd {
+    width: 30px;
+    height: 34px;
+    background-image: url("linkedin-brands.png");
 }
