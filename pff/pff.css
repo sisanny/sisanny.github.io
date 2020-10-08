@@ -15,17 +15,29 @@
     #cv {
         width: 90%;
     }
+
+    .sp:after {
+        top: 7px;
+    }
 }
 
 @media screen and (max-width : 1440px) {
     #cv {
         width: 100%;
     }
+
+    .sp:after {
+        top: 7px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     #cv {
         width: 100%;
+    }
+
+    .sp:after {
+        top: 7px;
     }
 }
 
@@ -126,7 +138,7 @@ h4:before {
     font-size: 42px;
     color: transparent;
     position: relative;
-    top: 3px;
+    top: 7px;
     color: #FF52E5;
 }
 
