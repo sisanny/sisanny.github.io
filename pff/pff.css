@@ -131,8 +131,8 @@ h4:before {
 
 .sp {
     width: 120px;
-    border-bottom: 2px solid #FF52E5;
-    padding-bottom: 5px;
+    /*border-bottom: 1px solid #FF52E5;
+    padding-bottom: 5px;*/
 }
 
 .sp:after {
