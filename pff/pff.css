@@ -151,7 +151,7 @@ h4:before {
 .py:after {
     content: "__";
     position: relative;
-    left: -75px;
+    left: -70px;
 }
 
 .s:after {
@@ -163,7 +163,7 @@ h4:before {
 .jo:after {
     content: "______";
     position: relative;
-    left: -45px;
+    left: -42px;
 }
 
 .ss {
