@@ -15,29 +15,17 @@
     #cv {
         width: 90%;
     }
-
-    .sp:after {
-        top: 7px;
-    }
 }
 
 @media screen and (max-width : 1440px) {
     #cv {
         width: 100%;
     }
-
-    .sp:after {
-        top: 7px;
-    }
 }
 
 @media screen and (max-width: 600px) {
     #cv {
         width: 100%;
-    }
-
-    .sp:after {
-        top: 7px;
     }
 }
 
@@ -130,12 +118,12 @@ h4:before {
 
 .sp {
     width: 120px;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
     padding-bottom: 5px;
 }
 
 .sp:after {
-    font-size: 42px;
+    font-size: 34px;
     color: transparent;
     position: relative;
     top: 7px;
@@ -145,7 +133,7 @@ h4:before {
 .ja:after {
     content: "____";
     position: relative;
-    left: -35px;
+    left: -45px;
 }
 
 .h:after {
@@ -157,23 +145,23 @@ h4:before {
 .c:after {
     content: "____";
     position: relative;
-    left: -35px;
+    left: -43px;
 }
 
 .py:after {
     content: "__";
     position: relative;
-    left: -70px;
+    left: -75px;
 }
 
 .s:after {
     content: "____";
     position: relative;
-    left: -35px;
+    left: -45px;
 }
 
 .jo:after {
-    content: "______";
+    content: "_______";
     position: relative;
     left: -45px;
 }
