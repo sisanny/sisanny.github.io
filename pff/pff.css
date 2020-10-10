@@ -168,9 +168,9 @@ h4:before {
 }
 
 .s:after {
-    content: "____";
+    content: "___";
     position: relative;
-    left: -45px;
+    left: -50px;
 }
 
 .jo:after {

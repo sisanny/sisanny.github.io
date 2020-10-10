@@ -141,7 +141,7 @@ p[aria-label]:hover:after {
 .col-1 {
     padding-left: 10px;
     padding-right: 10px;
-    width: 400px; /*40%, 550px*/
+    width: 350px; /*40%, 550px*/
     text-align: center;
     background: #8ab4f8;
     color: whitesmoke;
@@ -150,14 +150,15 @@ p[aria-label]:hover:after {
 .col-2 {
     padding-left: 10px;
     padding-right: 10px;
-    width: 690px;  /*50%, 650px*/
+    width: 620px;  /*50%, 650px*/
     text-align: left;
     background-color: white;
 }
 
 .hidden {
-    width: 180px; /*80px*/
-    background: linear-gradient(90deg, rgba(138,180,248,1) 74%, rgba(255,255,255,1) 100%);;
+    width: 200px; /*80px*/
+    background-color: white;
+    /*background: linear-gradient(90deg, rgba(138,180,248,1) 74%, rgba(255,255,255,1) 100%);;*/
 }
 
 h2 {
@@ -189,7 +190,7 @@ h4:before {
 }
 
 .sp {
-    width: 130px;
+    width: 100px;
     border-bottom: 2px solid white;
     padding-bottom: 8px;
 }
@@ -240,5 +241,5 @@ h4:before {
 }
 
 .ss {
-    width: 150px;
+    width: 120px;
 }
