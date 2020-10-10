@@ -121,7 +121,6 @@ h4:before {
 }
 
 .skills {
-    margin-bottom: 15px;
     border-bottom: 1px dotted whitesmoke;
     display: flex;
     flex-wrap: wrap;
