@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="GeoCV.css" rel="stylesheet" type="text/css" media="only screen" />
+    <link href="GeoCV.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px) ,
+     only screen and (-webkit-min-device-pixel-ratio: 2) ,screen and (-webkit-device-pixel-ratio:1.5)" />
+</head>
+<body>
+    <div id="cv">
+        <map id="map"></map>
+        <script>
+            function initMap(listener) {
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 4, center: {lat: -15.076367, lng: 8.280828}});
+
+                var locations = [
+                    ['Eger, 1989 - 2009', 47.903198, 20.373110],
+                    ['Budapest, 2011 - 2016',  47.497913, 19.040236],
+                    ['Cardiff, 2010',  51.481583, -3.179090],
+                    ['Maastricht 2016 - present', 50.851368, 5.690972]
+                ];
+
+                for (let i = 0; i < locations.length; i++) {
+                    marker = new google.maps.Marker({
+                        animation: google.maps.Animation.DROP,
+                        position: {lat: locations[i][1], lng: locations[i][2]},
+                        map: map,
+                        title: locations[i][0],
+                        url: '#' + locations[i][0]
+                    });
+
+                    const markerTitle = marker.url;
+
+                    google.maps.event.addListener(marker, 'click', function() {
+                        window.location.href = markerTitle;
+                    });
+
+                    let infowindow = new google.maps.InfoWindow({
+                        content: marker.title,
+                        position: marker.position
+                    });
+
+                    const targetParagraph = document.getElementById(marker.title);
+
+                    let currentColor = "";
+
+                    //black blue, wtf?
+                    marker.addListener("click", () => {
+                        infowindow.open(map);
+                        currentColor = targetParagraph.style.color;
+                        targetParagraph.style.color = changeColor(currentColor);
+                    });
+                }
+
+                function changeColor(curColor) {
+                    let newColor = "";
+                    if (curColor == "red") {
+                        newColor = "black";
+                        curColor = "black";
+                    } else {
+                        newColor= "red";
+                        curColor = "red";
+                    }
+                    return newColor;
+                }
+            }
+        </script>
+        <div class="col-1">
+                <div id="contacts">
+                    <h1 id="Eger, 1989 - 2009">Anna Gyulavari</h1>
+                    <p>annagyulavari@gmail.com</p>
+                    <p>+36304607725</p>
+                    <p>Maastricht, 6221 TT, Netherlands</p>
+                    <div class="linkbox">
+                        <a class="info git" href="https://github.com/sisanny"></a>
+                        <a class="info linkd" href="https://www.linkedin.com/in/anna-gyulavari"></a>
+                    </div>
+                </div>
+                <h2>IT Skills</h2>
+                <div class="skills">
+                    <p class="sp h">HTML</p>
+                    <p class="sp c">CSS</p>
+                    <p class="sp ja">Java</p>
+                    <p class="sp py">Python</p>
+                    <p class="sp s">SQL</p>
+                    <p class="sp jo" aria-label="eager to learn new things">Joker</p>
+                </div>
+            <h2> Skills</h2>
+            <div class="skills soft">
+                <p class="ss">Communication</p>
+                <p class="ss">Teamwork</p>
+                <p class="ss">Empathy</p>
+                <p class="ss">Critical Thinking</p>
+                <p class="ss">Adaptability</p>
+                <p class="ss">Growth Mindset</p>
+            </div>
+                <h2> Interest</h2>
+                <div class="skills soft">
+                    <p class="ss">Javascript</p>
+                    <p class="ss">UX Research</p>
+                    <p class="ss">UX design</p>
+                    <p class="ss">Human Machine Interaction</p>
+                </div>
+                <h2>Languages</h2>
+                <div>
+                    <p id="Cardiff, 2010">English</p>
+                    <p>Hungarian</p>
+                </div>
+            </div>
+        <div class="col-2">
+                <h2>Education</h2>
+                <div class="edu">
+                    <h4>2020 - 2021  Junior Software Developer course, Green Fox Academy</h4>
+                    <p class="p">The beginning of this course covered basic concepts of different algorithm implementation,
+                        while using the programming language Java. I also got familiarized with Git and IDE-s.
+                        Currently we are looking deeper into specifics of the technological field such as Spring Boot, Thymeleaf and SQL.
+                        The last phase of the course(11.2020.)  I will collaborate with a group on complex projects. </p>
+                    <h4>2020 - 2020  #StayHomeCodingCamp, Green Fox Academy</h4>
+                    <p class="p">During this course, I gained a basic understanding of web development
+                        and I had to create a website as a final project.
+                        I found the project so inspiring that since then I
+                        have been continuously educating myself about css , html and javascript. </p>
+                    <h4 id="Maastricht 2016 - present">2016 - 2020  Psychology and Neuroscience, Maastricht University</h4>
+                    <h5>Favourite courses:</h5>
+                    <ul class="p">
+                        <li> Man and Machine:  Covered some theoretical background of neural networks</li>
+                        <li> Computational Neuroscience</li>
+                        <li> Brain Computer Interface</li>
+                        <li> Python Basics</li>
+                    </ul>
+                    <h5>Thesis topic:</h5>
+                    <ul class="p">
+                        <lo> Comparison of Convolutional Neural Networks and Capsule Network performing image recognition tasks.</lo>
+                    </ul>
+                </div>
+                <h2>Work</h2>
+                <div class="work">
+                    <h4>2016 - 2020  McDonald's, Maastricht</h4>
+                    <p class="p">I was continuously working next to my studies, which was a good time management practice.
+                        Additionally, working at a fast food restaurant taught me how to work under high pressure.</p>
+                    <h4 id="Budapest, 2011 - 2016">2012 - 2016  City Sightseeing Budapest, Budapest</h4>
+                    <p class="p"> As a tourist assistant I was responsible for providing a stimulating traveling experiences to tourists by
+                         answering questions and giving information on resorts, historical sites, scenic areas, and other tourist attractions.
+                        Working in an international environment with tourists has helped me to improve my interpersonal skills.
+                    </p>
+                </div>
+            </div>
+    </div>
+    <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCAPyLlVwFp-oCR6CB5cvPHexgLScFrA&callback=initMap">
+    </script>
+</body>
+</html>

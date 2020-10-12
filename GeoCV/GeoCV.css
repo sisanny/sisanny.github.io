@@ -1,0 +1,218 @@
+#map {
+    width: 89%;
+    height: 100px;
+}
+
+#cv {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Roboto Light", serif;
+}
+
+@media screen and (max-width : 1800px) {
+    #cv {
+        width: 90%;
+    }
+    .sp {
+        width: 120px;
+        border-bottom: transparent;
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    #cv {
+        width: 100%;
+    }
+    .sp {
+        width: 120px;
+        border-bottom: transparent;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #cv {
+        width: 100%;
+    }
+    .sp {
+        width: 120px;
+        border-bottom: transparent;
+    }
+}
+
+#contacts {
+    text-align: center;
+    padding-top: 15px;
+    border-bottom: 1px dotted whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    color: whitesmoke;
+}
+
+p:hover {
+     position: relative;
+ }
+
+p[aria-label]:hover:after {
+    content: attr(aria-label);
+    padding: 4px 8px;
+    position: absolute;
+    left: -40%;
+    top: 50%;
+    white-space: nowrap;
+    z-index: 30;
+    background: transparent;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.col-1 {
+    font-family: 'Architects Daughter', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 350px; /*40%, 550px*/
+    text-align: center;
+    background-image: linear-gradient( 135deg,  #8ab4f8 10%, #a8dab5 100%);
+    color: whitesmoke;
+}
+
+.col-2 {
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 600px;  /*50%, 650px*/
+    text-align: left;
+    background-color: white;
+    border-right: 1px solid #a8dab5;
+    border-bottom: 1px solid #a8dab5;
+    border-top: 1px solid #a8dab5;
+}
+
+h5,
+.col-2  h2 {
+    background-image: radial-gradient( #8ab4f8 30%, #a8dab5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 40px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+h5 {
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.col-1 h2 {
+    color: whitesmoke;
+    margin-bottom: 0;
+
+}
+
+h4:before {
+    content: "o";
+    background-image: linear-gradient(30deg, #8ab4f8 30%, #a8dab5 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    right: 20px;
+}
+
+.p {
+    margin-left: 40px;
+}
+
+.skills {
+    border-bottom: 1px dotted whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.sp {
+    width: 120px;
+    /*border-bottom: 1px solid #FF52E5;
+    padding-bottom: 5px;*/
+}
+
+.sp:after {
+    font-size: 40px;
+    position: relative;
+    top: 7px;
+    color: whitesmoke;
+    font-family: "Roboto Light";
+}
+
+.ja:after {
+    content: "____";
+    position: relative;
+    left: -45px;
+}
+
+.h:after {
+    content: "____";
+    position: relative;
+    left: -53px;
+}
+
+.c:after {
+    content: "____";
+    position: relative;
+    left: -43px;
+}
+
+.py:after {
+    content: "__";
+    position: relative;
+    left: -70px;
+}
+
+.s:after {
+    content: "___";
+    position: relative;
+    left: -50px;
+}
+
+.jo:after {
+    content: "______";
+    position: relative;
+    left: -42px;
+}
+
+.ss {
+    width: 120px;
+}
+
+.work,
+.edu {
+    border-left: 1px solid #a8dab5 ;
+    padding-left: 15px;
+}
+
+.linkbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 110px;
+    margin-bottom: 15px;
+}
+
+.git {
+    width: 30px;
+    height: 31px;
+    background-image: url("github-brands.png");
+    margin-right: 50px;
+}
+
+.linkd {
+    width: 30px;
+    height: 34px;
+    background-image: url("linkedin-brands.png");
+}
