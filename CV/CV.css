@@ -9,7 +9,6 @@
     font-family: "Roboto Light", serif;
 }
 
-/* On screens that are 992px (1440px) wide or less, go from four columns to two columns */
 @media screen and (max-width : 1800px) {
     #cv {
         width: 90%;
@@ -64,9 +63,6 @@ p[aria-label]:hover:after {
     top: 50%;
     white-space: nowrap;
     z-index: 30;
-}
-
-p[aria-label]:hover:after {
     background: transparent;
     font-size: 15px;
     color: whitesmoke;
@@ -93,12 +89,19 @@ p[aria-label]:hover:after {
     border-top: 1px solid #F6D242;
 }
 
+h5,
 .col-2  h2 {
     background-image: radial-gradient(#FF52E5 30%, #F6D242 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 40px;
     font-family: 'Architects Daughter', cursive;
+}
+
+h5 {
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 15px;
 }
 
 .col-1 h2 {
