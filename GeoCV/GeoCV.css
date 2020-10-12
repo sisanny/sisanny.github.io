@@ -79,7 +79,7 @@ p[aria-label]:hover:after {
     padding-right: 10px;
     width: 350px; /*40%, 550px*/
     text-align: center;
-    background-image: linear-gradient( 135deg,  #8ab4f8 10%, #a8dab5 100%);
+    background-image: linear-gradient( 135deg,  #aadaff 10%, #a8dab5 100%);
     color: whitesmoke;
 }
 
@@ -96,7 +96,7 @@ p[aria-label]:hover:after {
 
 h5,
 .col-2  h2 {
-    background-image: radial-gradient( #8ab4f8 30%, #a8dab5 100%);
+    background-image: radial-gradient( #aadaff 30%, #a8dab5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 40px;
@@ -117,7 +117,8 @@ h5 {
 
 h4:before {
     content: "o";
-    background-image: linear-gradient(30deg, #8ab4f8 30%, #a8dab5 70%);
+    /*content: url("markergood.png");*/
+    background-image: linear-gradient(30deg, #aadaff 30%, #a8dab5 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;

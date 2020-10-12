@@ -33,7 +33,7 @@
 
                     const markerTitle = marker.url;
 
-                    google.maps.event.addListener(marker, 'click', function() {
+                    google.maps.event.addListener(marker, 'click', function () {
                         window.location.href = markerTitle;
                     });
 
@@ -41,29 +41,6 @@
                         content: marker.title,
                         position: marker.position
                     });
-
-                    const targetParagraph = document.getElementById(marker.title);
-
-                    let currentColor = "";
-
-                    //black blue, wtf?
-                    marker.addListener("click", () => {
-                        infowindow.open(map);
-                        currentColor = targetParagraph.style.color;
-                        targetParagraph.style.color = changeColor(currentColor);
-                    });
-                }
-
-                function changeColor(curColor) {
-                    let newColor = "";
-                    if (curColor == "red") {
-                        newColor = "black";
-                        curColor = "black";
-                    } else {
-                        newColor= "red";
-                        curColor = "red";
-                    }
-                    return newColor;
                 }
             }
         </script>
