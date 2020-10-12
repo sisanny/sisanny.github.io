@@ -18,6 +18,9 @@
     #cv {
         width: 90%;
     }
+    #map {
+        width: 100%;
+    }
     .sp {
         width: 120px;
         border-bottom: transparent;
@@ -28,6 +31,9 @@
     #cv {
         width: 100%;
     }
+    #map {
+        width: 100%;
+    }
     .sp {
         width: 120px;
         border-bottom: transparent;
@@ -36,6 +42,9 @@
 
 @media screen and (max-width: 600px) {
     #cv {
+        width: 100%;
+    }
+    #map {
         width: 100%;
     }
     .sp {
