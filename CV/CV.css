@@ -132,8 +132,8 @@ h4:before {
 }
 
 .sp {
-    padding-bottom: 5px;
-    border-bottom: 1px solid dimgray;
+    padding-bottom: 4px;
+    border-bottom: 1px solid gray;
 }
 
 .sp {
@@ -143,7 +143,7 @@ h4:before {
 }
 
 .sp:after {
-    font-size: 40px;
+    font-size: 20px;
     position: relative;
     top: 7px;
     color: whitesmoke;
