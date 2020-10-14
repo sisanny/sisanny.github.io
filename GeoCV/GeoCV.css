@@ -226,3 +226,12 @@ h4:before {
     height: 34px;
     background-image: url("linkedin-brands.png");
 }
+
+#scrum {
+    text-decoration: none;
+    color: black;
+}
+
+#scrum:hover {
+    color: #a8dab5;
+}
