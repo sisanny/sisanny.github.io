@@ -88,6 +88,7 @@ p[aria-label]:hover:after {
     padding-right: 10px;
     width: 350px; /*40%, 550px*/
     text-align: center;
+    /*background-image: linear-gradient(130deg, #051937 10%, #004d7a, #008793, #00bf72, #a8eb12 100%);*/
     background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     /*background-image: linear-gradient( 135deg,  #aadaff 10%, #a8dab5 100%);*/
     color: white;
@@ -151,52 +152,52 @@ h4:before {
 
 .sp {
     width: 120px;
-    /*border-bottom: 1px solid #FF52E5;
-    padding-bottom: 5px;*/
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 5px;
 }
 
 .sp:after {
     font-size: 40px;
     position: relative;
-    top: 7px;
+    top: 24px;
     color: white;
     font-family: "Roboto Light";
 }
 
 .ja:after {
-    content: "____";
+    content: "----";
     position: relative;
-    left: -45px;
+    left: -51px;
 }
 
 .h:after {
-    content: "____";
+    content: "----";
     position: relative;
-    left: -53px;
+    left: -57px;
 }
 
 .c:after {
-    content: "____";
+    content: "----";
     position: relative;
-    left: -43px;
+    left: -51px;
 }
 
 .py:after {
-    content: "__";
+    content: "--";
     position: relative;
-    left: -70px;
+    left: -73px;
 }
 
 .s:after {
-    content: "___";
+    content: "--";
     position: relative;
-    left: -50px;
+    left: -65px;
 }
 
 .jo:after {
-    content: "______";
+    content: "------";
     position: relative;
-    left: -42px;
+    left: -46px;
 }
 
 .ss {

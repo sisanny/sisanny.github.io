@@ -143,17 +143,16 @@ h4:before {
 }
 
 .sp:after {
-    font-size: 32px;
-    position: absolute;
-    top: 6px;
+    font-size: 40px;
     color: #FF52E5;
     font-family: "Roboto Light";
 }
 
 .ja:after {
     content: "____";
-    position: relative;
-    left: -44px;
+    position: absolute;
+    left: 432px;
+    top: 434px;
 }
 
 .h:after {
