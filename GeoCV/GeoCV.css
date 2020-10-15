@@ -88,8 +88,9 @@ p[aria-label]:hover:after {
     padding-right: 10px;
     width: 350px; /*40%, 550px*/
     text-align: center;
-    background-image: linear-gradient( 135deg,  #aadaff 10%, #a8dab5 100%);
-    color: whitesmoke;
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /*background-image: linear-gradient( 135deg,  #aadaff 10%, #a8dab5 100%);*/
+    color: white;
 }
 
 .col-2 {
@@ -98,14 +99,15 @@ p[aria-label]:hover:after {
     width: 600px;  /*50%, 650px*/
     text-align: left;
     background-color: white;
-    border-right: 1px solid #a8dab5;
-    border-bottom: 1px solid #a8dab5;
-    border-top: 1px solid #a8dab5;
+    border-right: 1px solid #051937;
+    border-bottom: 1px solid #051937;
+    border-top: 1px solid #051937;
 }
 
 h5,
 .col-2  h2 {
-    background-image: radial-gradient( #aadaff 30%, #a8dab5 100%);
+    background-image: radial-gradient( #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /*background-image: radial-gradient( #aadaff 30%, #a8dab5 100%);*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 40px;
@@ -119,7 +121,7 @@ h5 {
 }
 
 .col-1 h2 {
-    color: whitesmoke;
+    color: white;
     margin-bottom: 0;
 
 }
@@ -127,7 +129,8 @@ h5 {
 h4:before {
     content: "o";
     /*content: url("markergood.png");*/
-    background-image: linear-gradient(30deg, #aadaff 30%, #a8dab5 70%);
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /*background-image: linear-gradient(30deg, #aadaff 30%, #a8dab5 70%);*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -139,7 +142,7 @@ h4:before {
 }
 
 .skills {
-    border-bottom: 1px dotted whitesmoke;
+    border-bottom: 1px dotted white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -156,7 +159,7 @@ h4:before {
     font-size: 40px;
     position: relative;
     top: 7px;
-    color: whitesmoke;
+    color: white;
     font-family: "Roboto Light";
 }
 
@@ -202,7 +205,7 @@ h4:before {
 
 .work,
 .edu {
-    border-left: 1px solid #a8dab5 ;
+    border-left: 1px solid #051937 ;
     padding-left: 15px;
 }
 
@@ -233,5 +236,5 @@ h4:before {
 }
 
 #scrum:hover {
-    color: #a8dab5;
+    color: #051937;
 }

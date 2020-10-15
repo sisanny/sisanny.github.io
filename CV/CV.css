@@ -143,7 +143,7 @@ h4:before {
 }
 
 .sp:after {
-    font-size: 30px;
+    font-size: 32px;
     position: absolute;
     top: 6px;
     color: #FF52E5;
@@ -153,19 +153,19 @@ h4:before {
 .ja:after {
     content: "____";
     position: relative;
-    left: -45px;
+    left: -44px;
 }
 
 .h:after {
     content: "____";
     position: relative;
-    left: -53px;
+    left: -50px;
 }
 
 .c:after {
     content: "____";
     position: relative;
-    left: -43px;
+    left: -44px;
 }
 
 .py:after {
@@ -177,13 +177,13 @@ h4:before {
 .s:after {
     content: "___";
     position: relative;
-    left: -50px;
+    left: -52px;
 }
 
 .jo:after {
     content: "______";
     position: relative;
-    left: -42px;
+    left: -44px;
 }
 
 .ss {
