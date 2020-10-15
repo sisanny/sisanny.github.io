@@ -39,10 +39,18 @@
     #map {
         width: 98%;
     }
-    .col-2 {
-        border-right: none;
+}
+
+@media screen and (max-width : 1300px) {
+    #cv {
+        width: 82%;
+    }
+    #map {
+        width: 98%;
     }
 }
+
+
 
 @media screen and (max-width: 600px) {
     #cv {
