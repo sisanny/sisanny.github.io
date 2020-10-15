@@ -165,39 +165,39 @@ h4:before {
 }
 
 .ja:after {
-    content: "----";
+    content: "------";
     position: relative;
-    left: -52px;
+    left: -38px;
 }
 
 .h:after {
-    content: "----";
+    content: "-----";
     position: relative;
-    left: -57px;
+    left: -50px;
 }
 
 .c:after {
-    content: "----";
+    content: "-----";
     position: relative;
-    left: -52px;
+    left: -44px;
 }
 
 .py:after {
-    content: "--";
+    content: "---";
     position: relative;
-    left: -74px;
+    left: -67px;
 }
 
 .s:after {
-    content: "--";
+    content: "---";
     position: relative;
-    left: -66px;
+    left: -58px;
 }
 
 .jo:after {
-    content: "------";
+    content: "---------";
     position: relative;
-    left: -47px;
+    left: -46px;
 }
 
 .ss {
