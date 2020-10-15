@@ -16,23 +16,31 @@
 
 @media screen and (max-width : 1800px) {
     #cv {
-        width: 90%;
+        width: 70%;
     }
     #map {
-        width: 100%;
+        width: 83%;
+    }
+}
+
+@media screen and (max-width : 1700px) {
+    #cv {
+        width: 70%;
+    }
+    #map {
+        width: 92%;
     }
 }
 
 @media screen and (max-width : 1440px) {
     #cv {
-        width: 100%;
+        width: 73%;
     }
     #map {
-        width: 100%;
+        width: 98%;
     }
     .col-2 {
-        border-collapse: collapse;
-        border-right: 1px solid #051937;
+        border-right: none;
     }
 }
 
@@ -44,7 +52,8 @@
         width: 100%;
     }
     .col-2 {
-        border-collapse: collapse;
+        border-top: none;
+        border-bottom: none;
         border-right: 1px solid #051937;
     }
 }
