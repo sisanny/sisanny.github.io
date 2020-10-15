@@ -30,6 +30,10 @@
     #map {
         width: 100%;
     }
+    .col-2 {
+        border-collapse: collapse;
+        border-right: 1px solid #051937;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -41,7 +45,7 @@
     }
     .col-2 {
         border-collapse: collapse;
-        border-right: #051937;
+        border-right: 1px solid #051937;
     }
 }
 
