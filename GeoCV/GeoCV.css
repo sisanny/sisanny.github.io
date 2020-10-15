@@ -50,6 +50,15 @@
     }
 }
 
+@media screen and (max-width : 1200px) {
+    #cv {
+        width: 95%;
+    }
+    #map {
+        width: 97%;
+    }
+}
+
 
 
 @media screen and (max-width: 600px) {
