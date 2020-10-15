@@ -143,9 +143,9 @@ h4:before {
 }
 
 .sp:after {
-    font-size: 22px;
-    position: relative;
-    top: 8px;
+    font-size: 30px;
+    position: absolute;
+    top: 6px;
     color: #FF52E5;
     font-family: "Roboto Light";
 }
