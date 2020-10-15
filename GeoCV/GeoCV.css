@@ -155,19 +155,19 @@ h4:before {
 .ja:after {
     content: "------";
     position: relative;
-    left: -38px;
+    left: -39px;
 }
 
 .h:after {
     content: "-----";
     position: relative;
-    left: -50px;
+    left: -51px;
 }
 
 .c:after {
     content: "-----";
     position: relative;
-    left: -44px;
+    left: -45px;
 }
 
 .py:after {
