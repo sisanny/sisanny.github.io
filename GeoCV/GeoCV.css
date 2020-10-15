@@ -21,10 +21,6 @@
     #map {
         width: 100%;
     }
-    .sp {
-        width: 120px;
-        border-bottom: transparent;
-    }
 }
 
 @media screen and (max-width : 1440px) {
@@ -34,10 +30,6 @@
     #map {
         width: 100%;
     }
-    .sp {
-        width: 120px;
-        border-bottom: transparent;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -46,10 +38,6 @@
     }
     #map {
         width: 100%;
-    }
-    .sp {
-        width: 120px;
-        border-bottom: transparent;
     }
 }
 
@@ -195,7 +183,8 @@ h4:before {
 }
 
 .jo:after {
-    content: "---------";
+    content: "----";
+    color: transparent;
     position: relative;
     left: -46px;
 }
