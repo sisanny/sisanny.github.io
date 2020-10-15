@@ -50,7 +50,7 @@
     }
 }
 
-@media screen and (max-width : 1200px) {
+@media screen and (max-width : 1280px) {
     #cv {
         width: 95%;
     }
@@ -70,7 +70,7 @@
 h1 {
     text-align: center;
     margin-top: 15px;
-    color: whitesmoke;
+    color: #FF52E5;
 }
 
 p:hover {
