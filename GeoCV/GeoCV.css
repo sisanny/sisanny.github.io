@@ -173,7 +173,7 @@ h4:before {
 .h:after {
     content: "----";
     position: relative;
-    left: -58px;
+    left: -57px;
 }
 
 .c:after {
@@ -185,13 +185,13 @@ h4:before {
 .py:after {
     content: "--";
     position: relative;
-    left: -73px;
+    left: -74px;
 }
 
 .s:after {
     content: "--";
     position: relative;
-    left: -65px;
+    left: -66px;
 }
 
 .jo:after {
