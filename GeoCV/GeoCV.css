@@ -43,7 +43,7 @@
 
 @media screen and (max-width : 1300px) {
     #cv {
-        width: 82%;
+        width: 95%;
     }
     #map {
         width: 98%;
@@ -70,7 +70,7 @@
 h1 {
     text-align: center;
     margin-top: 15px;
-    color: #FF52E5;
+    color: whitesmoke;
 }
 
 p:hover {
@@ -98,6 +98,7 @@ p[aria-label]:hover:after {
     text-align: center;
     /*background-image: linear-gradient(130deg, #051937 10%, #004d7a, #008793, #00bf72, #a8eb12 100%);*/
     background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: -webkit-linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     /*background-image: linear-gradient( 135deg,  #aadaff 10%, #a8dab5 100%);*/
     color: white;
 }
