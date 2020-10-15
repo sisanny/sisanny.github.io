@@ -250,18 +250,6 @@ h4:before {
     color: #008793;
 }
 
-@media screen and (max-width : 1100px) {
-    #cv {
-        width: 99%;
-    }
-    .col-1 {
-        width: 267px;
-    }
-    #map {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 600px) {
     #cv {
         width: 100%;
