@@ -61,7 +61,7 @@
 h1 {
     text-align: center;
     margin-top: 15px;
-    color: #FF52E5;
+    color: whitesmoke;
 }
 
 p:hover {
@@ -239,6 +239,15 @@ h4:before {
 
 #scrum:hover {
     color: #008793;
+}
+
+@media screen and (max-width : 1900px) {
+    #cv {
+        width: 60%;
+    }
+    #map {
+        width: 91%;
+    }
 }
 
 @media screen and (max-width : 1800px) {
