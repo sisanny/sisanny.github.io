@@ -14,16 +14,9 @@
     font-family: "Roboto Light", serif;
 }
 
-@media screen and (max-width : 1800px) {
-    #cv {
-        width: 70%;
-    }
-    #map {
-        width: 83%;
-    }
-}
 
-@media screen and (max-width : 1700px) {
+
+/*@media screen and (max-width : 1700px) {
     #cv {
         width: 70%;
     }
@@ -57,9 +50,7 @@
     #map {
         width: 97%;
     }
-}
-
-
+}*/
 
 #contacts {
     text-align: center;
@@ -70,7 +61,7 @@
 h1 {
     text-align: center;
     margin-top: 15px;
-    color: whitesmoke;
+    color: #FF52E5;
 }
 
 p:hover {
@@ -250,7 +241,34 @@ h4:before {
     color: #008793;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width : 1800px) {
+    #cv {
+        width: 90%;
+    }
+    #map {
+        width: 80%;
+    }
+    .col-2 {
+        border: none;
+    }
+}
+
+@media screen and (max-width : 1600px) {
+    #cv {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width : 1500px) {
+    #cv {
+        width: 100%;
+    }
+    #map {
+        width: 100%;
+    }
+}
+
+/*@media screen and (max-width: 600px) {
     #cv {
         width: 100%;
     }
@@ -263,4 +281,4 @@ h4:before {
         border-bottom: none;
         border-right: 1px solid #051937;
     }
-}
+}*/
