@@ -132,59 +132,56 @@ h4:before {
 }
 
 .sp {
-    padding-bottom: 4px;
-    border-bottom: 2px solid whitesmoke;
-}
-
-.sp {
     width: 120px;
-    /*border-bottom: 1px solid #FF52E5;
-    padding-bottom: 5px;*/
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 5px;
 }
 
 .sp:after {
-    font-size: 32px;
-    position: absolute;
-    top: 6px;
-    color: #FF52E5;
+    font-size: 40px;
+    position: relative;
+    top: 24px;
+    color: white;
     font-family: "Roboto Light";
 }
 
 .ja:after {
-    content: "____";
+    content: "------";
     position: relative;
-    left: -44px;
+    left: -39px;
 }
 
 .h:after {
-    content: "____";
+    content: "-----";
     position: relative;
-    left: -50px;
+    left: -51px;
 }
 
 .c:after {
-    content: "____";
+    content: "-----";
     position: relative;
-    left: -44px;
+    left: -45px;
 }
 
 .py:after {
-    content: "__";
+    content: "---";
     position: relative;
-    left: -70px;
+    left: -67px;
 }
 
 .s:after {
-    content: "___";
+    content: "---";
     position: relative;
-    left: -52px;
+    left: -58px;
 }
 
 .jo:after {
-    content: "______";
+    content: "----";
+    color: transparent;
     position: relative;
-    left: -44px;
+    left: -46px;
 }
+
 
 .ss {
     width: 120px;
@@ -224,4 +221,28 @@ h4:before {
 
 #scrum:hover {
     color: #FF52E5;
+}
+
+@media screen and (max-width : 1900px) {
+    #cv {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width : 1800px) {
+    #cv {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 1600px) {
+    #cv {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width : 1500px) {
+    #cv {
+        width: 100%;
+    }
 }

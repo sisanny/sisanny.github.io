@@ -14,44 +14,6 @@
     font-family: "Roboto Light", serif;
 }
 
-
-
-/*@media screen and (max-width : 1700px) {
-    #cv {
-        width: 70%;
-    }
-    #map {
-        width: 92%;
-    }
-}
-
-@media screen and (max-width : 1440px) {
-    #cv {
-        width: 73%;
-    }
-    #map {
-        width: 98%;
-    }
-}
-
-@media screen and (max-width : 1300px) {
-    #cv {
-        width: 95%;
-    }
-    #map {
-        width: 98%;
-    }
-}
-
-@media screen and (max-width : 1280px) {
-    #cv {
-        width: 95%;
-    }
-    #map {
-        width: 97%;
-    }
-}*/
-
 #contacts {
     text-align: center;
     padding-top: 15px;
@@ -61,7 +23,7 @@
 h1 {
     text-align: center;
     margin-top: 15px;
-    color: whitesmoke;
+    color: #FF52E5;
 }
 
 p:hover {
@@ -248,6 +210,9 @@ h4:before {
     #map {
         width: 91%;
     }
+    .col-2 {
+        border: none;
+    }
 }
 
 @media screen and (max-width : 1800px) {
@@ -256,9 +221,6 @@ h4:before {
     }
     #map {
         width: 80%;
-    }
-    .col-2 {
-        border: none;
     }
 }
 
@@ -276,18 +238,3 @@ h4:before {
         width: 100%;
     }
 }
-
-/*@media screen and (max-width: 600px) {
-    #cv {
-        width: 100%;
-    }
-    #map {
-        width: 100%;
-    }
-    .col-2 {
-        width: 350px;
-        border-top: none;
-        border-bottom: none;
-        border-right: 1px solid #051937;
-    }
-}*/

@@ -34,7 +34,9 @@
                     const markerTitle = marker.url;
 
                     google.maps.event.addListener(marker, 'click', function () {
-                        window.location.href = markerTitle;
+                        if ($(window).width() < 767) {
+                            window.location.href = markerTitle;
+                        }
                     });
 
                     let infowindow = new google.maps.InfoWindow({
