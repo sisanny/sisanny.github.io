@@ -3,49 +3,12 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="GeoCV.css" rel="stylesheet" type="text/css" media="only screen" />
-    <link href="GeoCV.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px) ,
+    <link href="colorCV.css" rel="stylesheet" type="text/css" media="only screen" />
+    <link href="colorCV.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px) ,
      only screen and (-webkit-min-device-pixel-ratio: 2) ,screen and (-webkit-device-pixel-ratio:1.5)" />
 </head>
 <body>
     <div id="cv">
-        <map id="map"></map>
-        <script>
-            function initMap(listener) {
-                var map = new google.maps.Map(
-                    document.getElementById('map'), {zoom: 3, center: {lat: 50.851368, lng: 5.690972}});
-
-                var locations = [
-                    ['Eger, 1989 - 2009', 47.903198, 20.373110],
-                    ['Budapest, 2011 - 2016',  47.497913, 19.040236],
-                    ['Cardiff, 2010',  51.481583, -3.179090],
-                    ['Maastricht 2016 - present', 50.851368, 5.690972]
-                ];
-
-                for (let i = 0; i < locations.length; i++) {
-                    marker = new google.maps.Marker({
-                        animation: google.maps.Animation.DROP,
-                        position: {lat: locations[i][1], lng: locations[i][2]},
-                        map: map,
-                        title: locations[i][0],
-                        url: '#' + locations[i][0]
-                    });
-
-                    const markerTitle = marker.url;
-
-                    google.maps.event.addListener(marker, 'click', function () {
-                        if (screen.width <= 767) {
-                            window.location.href = markerTitle;
-                        }
-                    });
-
-                    let infowindow = new google.maps.InfoWindow({
-                        content: marker.title,
-                        position: marker.position
-                    });
-                }
-            }
-        </script>
         <div class="col-1">
                 <div id="contacts">
                     <h1 id="Eger, 1989 - 2009">Anna Gyulavari</h1>
@@ -58,7 +21,7 @@
                     </div>
                 </div>
                 <h2>IT Skills</h2>
-                <div class="skills">
+                <div class="skills it">
                     <p class="sp h">HTML</p>
                     <p class="sp c">CSS</p>
                     <p class="sp ja">Java</p>
@@ -95,10 +58,10 @@
                     <p class="p">The beginning of this course covered basic concepts of different algorithm implementation
                         while using the programming language Java. I also got familiarized with Git and IDE-s.
                         In the next phase, we were looking deeper into specifics of the technological field such as Spring Boot, Thymeleaf and SQL.
-                        Currently,  I am collaborating with a group on complex projects using the <a id="scrum" href="https://www.scrumguides.org/">Scrum method</a>. </p>
+                        Currently,  I am collaborating with a group on complex projects using the<a id="scrum" href="https://www.scrumguides.org/">Scrum method</a>. </p>
                     <h4>2020 - 2020  #StayHomeCodingCamp, Green Fox Academy</h4>
                     <p class="p">During this 1 month course, I gained a basic understanding of web development
-                        and created a website as a final project.
+                        and I created a website as a final project.
                         I found the project so inspiring that since then I
                         have been continuously educating myself about CSS, HTML and javascript. </p>
                     <h4 id="Maastricht 2016 - present">2016 - 2020  Psychology and Neuroscience, Maastricht University</h4>
@@ -117,7 +80,7 @@
                 <h2>Work</h2>
                 <div class="work">
                     <h4>2016 - 2020  McDonald's, Maastricht</h4>
-                    <p class="p">I was continuously working next to my studies, which was a good time management practice.
+                    <p class="p">I was continuously working during my studies, which was a good time management practice.
                         Additionally, working at a fast-food restaurant taught me how to work under high pressure.</p>
                     <h4 id="Budapest, 2011 - 2016">2012 - 2016  City Sightseeing Budapest, Budapest</h4>
                     <p class="p"> As a tourist assistant, I was responsible for providing a stimulating travelling experience to tourists
@@ -127,8 +90,5 @@
                 </div>
             </div>
     </div>
-    <script defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCAPyLlVwFp-oCR6CB5cvPHexgLScFrA&callback=initMap">
-    </script>
 </body>
 </html>
